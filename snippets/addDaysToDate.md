@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Add days to date
 tags: date
 cover: digital-nomad-12
@@ -23,4 +23,12 @@ const addDaysToDate = (date, n) => {
 ```js
 addDaysToDate('2020-10-15', 10); // '2020-10-25'
 addDaysToDate('2020-10-15', -10); // '2020-10-05'
-```
+``` -->
+
+const addDaysToDate = (date, n) => {
+   const d = new Date(date);
+   d.setDate(d.getDate() + n);
+   return d.toISOString().split('T')[0];
+};
+
+addDaysToDate('2023-10-15',10);
