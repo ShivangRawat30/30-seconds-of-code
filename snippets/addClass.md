@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Add class to HTML element
 tags: browser
 author: chalarangelo
@@ -18,4 +18,6 @@ const addClass = (el, className) => el.classList.add(className);
 ```js
 addClass(document.querySelector('p'), 'special');
 // The paragraph will now have the 'special' class
-```
+``` -->
+
+const addClass = (el, className) => el.classList.add(className);
